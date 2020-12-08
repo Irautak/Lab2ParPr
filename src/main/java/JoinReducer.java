@@ -26,7 +26,7 @@ public class JoinReducer extends Reducer<JoinWritableComparable, Text, Text, Tex
             Text stats = new Text("Min: " + min +
                                     "Avg: " + avg +
                                     "Max: " + max);
-            
+            context.write(airportName, stats);
         }
     }
 }
