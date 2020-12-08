@@ -50,4 +50,14 @@ public class JoinWritableComparable {
         if (this.indicator < other.indicator) return -1;
         return 0;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || this.getClass() != obj.getClass()) return false;
+        JoinWritableComparable other = (JoinWritableComparable)obj;
+        if (airportID != other.airportID) return false;
+        return indicator == other.indicator;
+    }
+
 }
