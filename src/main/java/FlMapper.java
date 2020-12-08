@@ -4,7 +4,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
 
-public class FlMapper extends Mapper<> {
+public class FlMapper extends Mapper<LongWritable, Text, JoinWritableComparable, Text> {
     private static final int AIRPORT_ID = 14;
     private static final int DELAY_TIME = 18;
 
