@@ -25,7 +25,8 @@ public class JoinReducer extends Reducer<JoinWritableComparable, Text, Text, Tex
             avg /= i;
             Text stats = new Text("Min: " + min +
                                     "Avg: " + avg +
-                                    "Max: " + max)
+                                    "Max: " + max);
+            
         }
     }
 }
