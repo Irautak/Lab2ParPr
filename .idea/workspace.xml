@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75d42ac6-ec1a-4ea0-a77b-eee24fb78526" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/JoinComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JoinComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JoinWritableComparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JoinWritableComparable.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/JoinWritableComparable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+            <state relative-caret-position="491">
+              <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,8 +100,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/AirportMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/FlMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JoinWritableComparable.java" />
         <option value="$PROJECT_DIR$/src/main/java/JoinComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/JoinWritableComparable.java" />
       </list>
     </option>
   </component>
@@ -256,8 +256,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JoinWritableComparable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        <state relative-caret-position="491">
+          <caret line="74" column="17" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -68,4 +68,11 @@ public class JoinWritableComparable {
                 "indicator=" + indicator + '}';
     }
 
+    public int compareToID(Object obj) {
+        JoinWritableComparable other = (JoinWritableComparable)obj;
+        if (this.airportID > other.airportID) return 1;
+        if (this.airportID < other.airportID) return -1;
+        return 0;
+    }
+
 }
