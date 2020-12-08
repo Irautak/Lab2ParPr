@@ -32,6 +32,12 @@ public class JoinWritableComparable implements WritableComparable {
         return indicator;
     }
 
+
+    @Override
+    public int hashCode() {
+        return this.toString().hashCode();
+    }
+
     @Override
     public void write(DataOutput dataOutput) throws IOException {
         dataOutput.writeInt(airportID);
