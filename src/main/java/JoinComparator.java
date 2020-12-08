@@ -9,6 +9,6 @@ public class JoinComparator extends WritableComparator {
     public int compare(WritableComparator a, WritableComparator b) {
         JoinWritableComparable that = (JoinWritableComparable)a;
         JoinWritableComparable other = (JoinWritableComparable)b;
-        return that.compareTo(other);
+        return that.compareToID(other);
     }
 }
