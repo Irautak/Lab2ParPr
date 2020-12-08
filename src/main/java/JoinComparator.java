@@ -1,3 +1,4 @@
+import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 
 public class JoinComparator extends WritableComparator {
@@ -6,7 +7,7 @@ public class JoinComparator extends WritableComparator {
     }
 
     @Override
-    public int compare(WritableComparator a, WritableComparator b) {
+    public int compare(WritableComparable a, WritableComparable b) {
         JoinWritableComparable that = (JoinWritableComparable)a;
         JoinWritableComparable other = (JoinWritableComparable)b;
         return that.compareToID(other);
