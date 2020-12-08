@@ -7,7 +7,7 @@ import java.io.IOException;
 public class FlMapper extends Mapper<> {
     private static final int AIRPORT_ID = 14;
     private static final int DELAY_TIME = 18;
-    
+
 
     private static float toFloat(String column) {
         if (!column.equals("")) {
