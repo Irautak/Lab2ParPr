@@ -60,4 +60,12 @@ public class JoinWritableComparable {
         return indicator == other.indicator;
     }
 
+
+    @Override
+    public String toString() {
+        return "JoinWritableComparable{" +
+                "airportID=" + airportID +
+                "indicator=" + indicator + '}';
+    }
+
 }
