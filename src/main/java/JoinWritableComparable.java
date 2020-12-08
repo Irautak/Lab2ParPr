@@ -1,3 +1,7 @@
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.IOException;
+
 public class JoinWritableComparable {
     private int airportID;
     private int indicator;
@@ -25,5 +29,25 @@ public class JoinWritableComparable {
         return indicator;
     }
 
-    
+    @Override
+    public void write(DataOutput dataOutput) throws IOException {
+        dataOutput.writeInt(airportID);
+        dataOutput.writeInt(indicator);
+    }
+
+    @Override
+    public void readFields(DataInput dataInput) throws IOException {
+        airportID = dataInput.readInt();
+        indicator = dataInput.readInt();
+    }
+
+    @Override
+    public int compareTo(Object obj) {
+        JoinWritableComparable other = (JoinWritableComparable)obj;
+        if (this.airportID > other.airportID) return 1;
+        if (this.airportID < other.airportID) return -1;
+        if (this.indicator > other.indicator) return 1;
+        if (this.indicator < other.indicator) return -1;
+        return 0;
+    }
 }
