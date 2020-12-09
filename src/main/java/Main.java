@@ -8,7 +8,7 @@ import org.apache.hadoop.mapreduce.Job;
 import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         Job job = Job.getInstance();
         job.setJarByClass(Main.class);
         MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, FlMapper.class);
@@ -24,6 +24,7 @@ public class Main {
         job.setMapOutputValueClass(Text.class);
 
         job.setNumReduceTasks(4);
+        job.waitForCompletion(true);
 
     }
 }
